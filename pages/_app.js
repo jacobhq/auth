@@ -1,4 +1,4 @@
-import { Auth } from '@supabase/ui'
+import { Auth } from 'jhq'
 import { supabase } from '../utils/initSupabase'
 import './../style.css'
 

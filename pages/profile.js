@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Card, Typography, Space } from '@supabase/ui'
+import { Card, Typography, Space } from 'jhq'
 import { supabase } from '../utils/initSupabase'
 
 export default function Profile({ user }) {

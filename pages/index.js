@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import useSWR from 'swr'
-import { Auth, Card, Typography, Space, Button, Icon } from '@supabase/ui'
+import { Auth, Card, Typography, Space, Button, Icon } from 'jhq'
 import { supabase } from '../utils/initSupabase'
 import { useEffect, useState } from 'react'
 
@@ -40,12 +40,12 @@ const Index = () => {
       return (
         <Space direction="vertical" size={8}>
           <div>
-            <img src="https://app.supabase.io/img/supabase-dark.svg" width="96" />
-            <Typography.Title level={3}>Welcome to Supabase Auth</Typography.Title>
+            <Typography.Title level={3}>Welcome to <b>JacobHQ</b></Typography.Title>
+            <p style={{color: '#c1c1c1', marginTop: '-1rem'}}>One account. All my services.</p>
           </div>
           <Auth
             supabaseClient={supabase}
-            providers={['google', 'github']}
+            providers={['github']}
             view={authView}
             socialLayout="horizontal"
             socialButtonSize="xlarge"
